@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/HeaderComponent";
 import Footer from "./components/FooterComponent";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./components/HomeComponent";
 import Contact from "./components/ContactConponent";
 
@@ -15,6 +15,10 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/Contact" element={<Contact />}></Route>
+          <Route
+            path="*"
+            element={<Navigate to="/" replace />}
+          />
       </Routes>
       <Footer/>
     </>

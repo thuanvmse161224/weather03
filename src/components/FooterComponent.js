@@ -1,10 +1,13 @@
+import { Box, Typography } from "@mui/material";
+import React from "react";
 
 function Footer() {
     return(
     <>
-        <footer>
-            <div>This is a footer</div>
-        </footer>
+        <Box sx={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+            <Typography>Made by Thuan 2023</Typography>
+        </Box>
+        
     </>
     )
 

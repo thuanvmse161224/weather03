@@ -1,14 +1,11 @@
 import React, {useState} from "react";
 
 import { Link } from "react-router-dom";
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import { Menu, MenuItem } from "@mui/material";
+import { AppBar, Box, Toolbar, Typography, Button, IconButton, Menu, MenuItem } from "@mui/material";
+
+import MenuIcon from "@mui/icons-material/Menu";
+import CloudIcon from '@mui/icons-material/Cloud';
+
 const pages = [
     {"link":"Search", "name":"Search"},
     {"link":"Cities", "name":"City List"},
@@ -77,9 +74,10 @@ function Header() {
                     </Menu>
                 </Box>
 
+                <CloudIcon sx={{ mr: 1 }} ></CloudIcon>
                 <Typography
                     variant="h6"
-                    sx={{ flexGrow: 1, my: 2, color: "white", display: "block", textDecoration: "none" }}
+                    sx={{ display: { xs: 'flex', md: 'none' }, flexGrow: 1, my: 2, color: "white", textDecoration: "none" }}
                     component={Link}
                     to="/"
                 >

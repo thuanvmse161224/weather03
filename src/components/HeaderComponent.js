@@ -7,6 +7,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloudIcon from '@mui/icons-material/Cloud';
 
 const pages = [
+    {"link":"", "name":"Homepage"},
     {"link":"Search", "name":"Search"},
     {"link":"Cities", "name":"City List"},
     {"link":"Contact", "name":"Contact"}
@@ -31,17 +32,17 @@ function Header() {
                         display: { xs: "flex", md: "none" },
                     }}
                 >
-                <IconButton
-                    size="large"
-                    edge="start"
-                    color="inherit"
-                    aria-label="menu"
-                    onClick={handleOpenNavMenu}
-                    sx={{ mr: 2 }}
-                >
-                    <MenuIcon />
-                </IconButton>
-                <Menu
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        onClick={handleOpenNavMenu}
+                        sx={{ mr: 2 }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Menu
                         id="menu-appbar"
                         anchorEl={anchorElNav}
                         anchorOrigin={{

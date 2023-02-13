@@ -1,10 +1,13 @@
 import { Container, Grid } from "@mui/material";
-import SearchWeather from "./SearchWeather";
+import SearchPage from "./SearchPageComponent";
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 
+import useDocumentTitle from '../helpers/useDocumentTitle';
+
 function Home() {
+    const title = useDocumentTitle('Homepage - Weather Watcher');
     return (
         <>
             <Container sx={{m : "15px"}}>

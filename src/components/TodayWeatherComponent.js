@@ -10,7 +10,7 @@ function TodayWeather () {
     return (
         <Grid item sm={12} sx={{display:"flex"}}>
             <Grid item sm={3}>
-                <i class="wi wi-day-sunny" style={{fontSize:"100px"}}></i>
+                <i className="wi wi-day-sunny" style={{fontSize:"100px"}}></i>
             </Grid>
             <Grid item sm={3} fontSize="35px">
                 23 °C <br/> 

@@ -1,10 +1,13 @@
 import { Container, Grid, Typography } from "@mui/material";
 import Box from '@mui/material/Box';
+import { useEffect, useState } from "react";
 
 import useDocumentTitle from '../helpers/useDocumentTitle';
+import getWeather from "../helpers/WeatherData";
 
 import NextDaysWeather from "./NextDayWeatherComponent";
 import TodayWeather from "./TodayWeatherComponent";
+import WeatherComponent from "./WeatherComponent";
 
 function Home() {
     useDocumentTitle('Homepage - Weather Watcher');
@@ -15,8 +18,7 @@ function Home() {
                     <Grid item sm={8} >
                         <Box sx={{backgroundColor : "#ff232323", padding: "15px"}}>
                             <Grid container spacing={2} sx={{display:"flex", p: "15px!important", fontFamily: "Public Sans, Helvetica"}}>
-                                <TodayWeather />
-                                <NextDaysWeather />
+                                <WeatherComponent/>
                             </Grid>
                         </Box>
                     </Grid>
